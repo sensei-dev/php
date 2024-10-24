@@ -1,0 +1,34 @@
+//fuggveny
+<?php
+function osszeallitas($string1, $string2): string {
+    // Kivesszük az utolsó előtti betűket
+    $utolsoElottiBetu1 = $string1[strlen($string1) - 2];
+    $utolsoElottiBetu2 = $string2[strlen($string2) - 2];
+
+    // Visszatérünk az új szóval
+    return $utolsoElottiBetu1 . $utolsoElottiBetu2;
+}
+
+// Példa használat
+$eredmeny = osszeallitas("alma", "körte");
+echo $eredmeny; // mt
+?>
+
+
+
+//eljaras
+<?php
+function kiirOsztok() {
+
+    for ($i = 50; $i <= 100; $i++) {
+
+        if ($i % 3 === 0 && $i % 5 === 0) {
+
+            echo $i . PHP_EOL;
+        }
+    }
+}
+
+
+kiirOsztok();
+?>
